@@ -23,5 +23,30 @@
         font-size: 1.25rem;
         max-width: 29rem;
         font-family: var(--text-logo);
+        margin-bottom: 2.5rem;
+    }
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3.5rem;
+    & .btn-primary{
+        color: var(--color-nav);
+        background-color: var(--secondary-color);
+        border-radius: 20rem;
+        font-weight: bold;
+        width: 5rem;
+        height: 5rem;
+        cursor: pointer;
+    }
+    & .btn-projets{
+        width: 7rem;
+        height: 7rem;
+    }
+    & .btn-contact{
+        width: 5rem;
+        height: 5rem;
+        font-size: 0.8rem;
     }
 }
