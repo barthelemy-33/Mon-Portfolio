@@ -1,4 +1,6 @@
 :root{
     --primary-color: #DCC083;
-    --primary-secondary: #3E2723;
+    --secondary-color: #3E2723;
+    --color-nav: #fff;
+    --text-logo: 'sans-serif';
 }
