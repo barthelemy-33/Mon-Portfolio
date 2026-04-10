@@ -5,6 +5,7 @@
 }
 body{
     background-color: var(--primary-color);
+    font-family:var(--text-logo);
 }
 li{
     list-style: none;

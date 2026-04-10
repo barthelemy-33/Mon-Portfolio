@@ -9,6 +9,7 @@
     justify-content: center;
     align-items: center;
     gap: 7rem;
+    margin-bottom: 2rem;
     & .tel{
         & p {
             margin: 1rem;

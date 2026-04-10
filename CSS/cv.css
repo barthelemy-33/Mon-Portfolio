@@ -1,0 +1,87 @@
+main{
+    margin: 5rem 8.5rem;
+}
+h1{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+h2{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.container2{
+    & .sous-container{
+        display: flex;
+        justify-content: space-between;
+        & .date{
+            & h1{
+            font-size: 1rem;
+        }
+        & h2{
+            font-size: 1rem;
+            font-weight: normal;
+        }
+        }
+    }
+    & .sous-container1{
+        & li{
+            margin: 1.1rem;
+            list-style: disc;
+        }
+    }
+}
+.container3{
+    & .sous-container2{
+        display: flex;
+        justify-content: space-between;
+        & .date1{
+            & h1{
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            }
+            & h2{
+                font-size: 1rem;
+                font-weight: normal;
+                margin-bottom: 2rem;
+            }
+        }
+    }
+    & .sous-container3{
+        & li{
+            list-style: square;
+            margin: 1.1rem;
+        }
+    }
+}
+.bar1{
+    background-color: var(--text-primary);
+    width: 95%;
+    height: 0.1rem;
+    margin: 5rem 0;
+}
+.expertise{
+    & h1{
+        font-size: 1.2rem;
+        margin: 4rem 0;
+    }
+    li{
+        list-style: disc;
+        margin-left: 1.1rem;
+    }
+}
+.bar2{
+    background-color: var(--text-primary);
+    width: 95%;
+    height: 0.1rem;
+    margin: 5rem 0;
+}
+.langue{
+    & h1{
+        font-size: 1.2rem;
+        margin: 4rem 0;
+    }
+    li{
+        list-style: disc;
+        margin-left: 1.1rem;
+    }
+}
