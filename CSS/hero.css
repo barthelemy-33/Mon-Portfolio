@@ -3,50 +3,55 @@
     gap: 4rem;
     justify-content: center;
     align-items: center;
-    margin-top: 8rem;
-    & img{
-        width: 23rem;
-        height: 23rem;
-        border-radius: 100rem;
-    }
     & h1{
-        font-size: 4.25rem;
+        font-size: 4rem;
         font-family: var(--text-logo);
         margin-bottom: 1.2rem;
     }
     & h2{
-        font-size: 1.75rem;
+        font-size: 2rem;
         font-family: var(--text-logo);
         margin-bottom: 1rem;
     }
     & p{
-        font-size: 1.25rem;
-        max-width: 29rem;
+        font-size: 1.1rem;
+        max-width: 25rem;
         font-family: var(--text-logo);
         margin-bottom: 2.5rem;
+        & span{
+            font-weight: bold;
+        }
     }
+}
+img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100rem;
+    margin-top: 2rem;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    margin-top: 7rem;
+    gap: 5rem;
 }
 .btn{
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 3.5rem;
+    gap: 4rem;
+    margin-left: 1rem ;
     & .btn-primary{
         color: var(--color-nav);
         background-color: var(--secondary-color);
         border-radius: 20rem;
         font-weight: bold;
-        width: 5rem;
-        height: 5rem;
+        width: 4rem;
+        height: 4rem;
         cursor: pointer;
+        font-size: 0.8rem;
     }
     & .btn-projets{
-        width: 7rem;
-        height: 7rem;
-    }
-    & .btn-contact{
-        width: 5rem;
-        height: 5rem;
-        font-size: 0.8rem;
+        width: 5.4rem;
+        height: 5.4rem;
     }
 }
