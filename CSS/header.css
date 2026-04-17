@@ -6,14 +6,29 @@
     justify-content: space-between;
     align-items: center;
     padding: 0.6rem 6rem;
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
     & p{
         font-weight: bold;
         font-family: var(--text-logo);
+        transform: rotate(0);
+        transition: all 1000ms ;
+        &:hover{
+            transform: rotate(1turn);
+            color: #293655;
+        }
     }
     & ul{
         display: flex;
         gap: 4rem;
         font-family: var(--text-logo);
         font-size: 0.9rem;
+        & a{
+            padding: 0.5rem;
+            &:hover{
+            background-color: #293655;
+            border-radius: 10px;
+            }
+        }
+        
     }
 }

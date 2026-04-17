@@ -6,6 +6,8 @@
 body{
     background-color: var(--primary-color);
     font-family:var(--text-logo);
+    color: var(--text-primary);
+    font-family: var(--text-family);
 }
 li{
     list-style: none;

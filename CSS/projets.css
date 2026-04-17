@@ -20,12 +20,12 @@
 .container6{
     background-color: var(--secondary-color);
     width: 30.8rem;
-    height: 20.8rem;
+    height: 17.8rem;
     border-radius: 10px;
     position: relative;
     & img{
         width: 30rem;
-        height: 20rem;
+        height: 17rem;
         top: 2%;
         right: 2%;
         left: 1.5%;

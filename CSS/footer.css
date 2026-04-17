@@ -39,14 +39,19 @@
             margin-top: 1.5rem;
             width: 1.5rem;
             height: 1.5rem;
+            &:hover{
+                animation: svg 1000ms alternate backwards ease-in-out ;
+                animation-delay: 300ms;
+                fill:red;
+            }
         }
     }
     & .copyright{
         display: flex;
         gap: 0.5rem;
         & svg{
-            width: 1rem;
-            height: 1rem;
+            width: 1.2rem;
+            height: 1.2rem;
         }
     }
 }

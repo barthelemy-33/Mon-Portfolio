@@ -1,7 +1,8 @@
 :root{
-    --primary-color: #DCC083;
-    --secondary-color: #3E2723;
+    --primary-color: #ffffff;
+    --secondary-color: #0F172A;
     --color-nav: #fff;
     --text-logo: 'sans-serif';
     --text-primary: #000;
+    --text-family:'ubuntu',sans-serif;
 }
