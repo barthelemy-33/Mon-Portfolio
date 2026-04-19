@@ -9,12 +9,14 @@
         opacity: 1;
     }
 }
-@keyframes svg {
+@keyframes btn {
     0% {
-        transform: scale(1) rotate(0deg);
+        transform: translateY(15%) ;
+        
     }
     100% {
-        transform: scale(1.5) rotate(45deg);
+        transform: translateY(-15%);
+        background-color: #7672b2;
     }
 }
 

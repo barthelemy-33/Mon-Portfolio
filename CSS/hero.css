@@ -35,14 +35,14 @@
         margin-top: 2rem;
         border: 6px solid var(--secondary-color);
         outline: none;
-        box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+        box-shadow: 0 8px 18px #00000066;
         transform: scale(1);
         transition: all 1000ms ;
         transition-delay: 300ms;
         &:hover{
             transform: scale(1.07);
-            box-shadow: 0 18px 36px rgba(19, 13, 100, 0.48);
-            border: 6px solid rgb(118, 114, 178);;
+            box-shadow: 0 18px 36px #130d647a;
+            border: 6px solid #7672b2;;
         }
     }
 }
@@ -60,9 +60,17 @@
         height: 4rem;
         cursor: pointer;
         font-size: 0.8rem;
+        animation: btn 2s alternate backwards ease-in-out infinite;
+        border: none;
+        &:hover{ 
+            animation-play-state: paused;
+        }
     }
+    
     & .btn-projets{
         width: 5.4rem;
         height: 5.4rem;
+        animation-delay: 1000ms;
     }
 }
+        

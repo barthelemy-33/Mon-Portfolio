@@ -35,15 +35,53 @@
     & ul{
         display: flex;
         gap: 1rem;
+        & a {
+            & .twitter {
+                transform: scale(1) rotate(0deg);
+                transition: all 1000ms;
+                &:hover {
+                transform: scale(1.7) rotate(45deg);
+                & path{
+                    fill: #00f2ff;
+                    }
+                }
+            }
+            & .link{
+                transform: scale(1) rotate(0deg);
+                transition: all 1000ms;
+                &:hover {
+                transform: scale(1.7) rotate(45deg);
+                & path{
+                    fill: blue;
+                    }
+                }
+            }
+            & .github{
+                transform: scale(1) rotate(0deg);
+                transition: all 1000ms;
+                &:hover {
+                transform: scale(1.7) rotate(45deg);
+                & path{
+                    fill: green;
+                    }
+                }
+            }
+            & .instagram{
+                transform: scale(1) rotate(0deg);
+                transition: all 1000ms;
+                &:hover {
+                    transform: scale(1.7) rotate(45deg);
+                    & path{
+                    fill: red;
+                    }
+                }
+            }
+        }
         & svg{
             margin-top: 1.5rem;
             width: 1.5rem;
             height: 1.5rem;
-            &:hover{
-                animation: svg 1000ms alternate backwards ease-in-out ;
-                animation-delay: 300ms;
-                fill:red;
-            }
+            animation-delay: 300ms;
         }
     }
     & .copyright{
