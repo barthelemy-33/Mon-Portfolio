@@ -64,6 +64,7 @@
         border: none;
         &:hover{ 
             animation-play-state: paused;
+            box-shadow: 0 8px 18px #00000066;
         }
     }
     

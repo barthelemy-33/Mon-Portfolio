@@ -16,7 +16,15 @@
     }
     100% {
         transform: translateY(-15%);
-        background-color: #7672b2;
+        background-color: #7672b2b3;
+    }
+}
+@keyframes headshake{
+    25% {
+        transform: translateX(2%)
+    }
+    75% {
+        transform: translateX(-2%)
     }
 }
 
