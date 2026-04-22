@@ -1,21 +1,24 @@
 .hero1{
     display: flex;
-    justify-content: space-between;
     box-shadow: 0 4px 30px #00000066;
     border-radius: 1rem; 
+    width: 80%;
+    margin: 11rem auto;
 }
 .container4{
     background: linear-gradient(45deg, #130d64bb , #130d64f5);
-    padding-left: 40rem;
+    width: 50%;
+    height: auto;
     border-radius: 1rem 7rem 7rem 1rem;
 }
 .formulaire{
+    width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 2rem;
     margin: 2.2rem;
-    margin-top: 3rem;
+    margin-top: 1rem;
     & h1{
         font-size: 2rem;
     }
@@ -35,8 +38,8 @@
         gap: 10px;
     }
     & input{
-        width: 17rem;
-        height: 3rem;
+        width: 14rem;
+        height: 2.5rem;
         padding: 1rem;
         border-radius: 2rem;
         background-color: #f1f1f1;
@@ -54,14 +57,14 @@
             }
     }
     textarea{
-        width: 36rem;
+        width: 27rem;
         height: 12rem;
         font-size: 1rem;
         padding: 1rem;
         border-radius: 1rem;
         background-color: var(--primary-color);
         border: 2px solid var(--text-primary);
-        margin-bottom: 1.5rem;
+        margin-bottom: 0.5rem;
         outline: none;
     }
 }
@@ -75,4 +78,111 @@
     cursor: pointer;
     box-shadow: 0 8px 18px #00000066;
     border: none;
+    transform: translateY(10%);
+    transition: all 500ms;
+    &:hover{
+       transform: translateY(-10%); 
+    }
+}
+/* ################# */
+/* Responsive contact */
+/* ################# */
+@media screen and (max-width:1330px){
+    .hero1{
+        width: 100%;
+    }
+}
+@media screen and (max-width:1120px){
+    .hero1{
+        gap: 0;
+        & .container4{
+            width: 40%;
+        }
+        & .formulaire{
+            gap: 1rem;
+        & .form1{
+            gap: 0.5rem;
+        }
+        & .form2{
+            gap: 0.5rem;
+        }
+        & form{
+        gap: 0.4rem;
+        }
+        & input{
+            width: 10rem;
+            height: 2.2rem;
+            font-size: 0.8rem;
+        }
+        textarea{
+            width: 20rem;
+            height: 10rem;
+            font-size: 0.7rem;
+            }
+        }
+    }
+    & .btn1{
+    padding: 0.5rem;
+    width: 10rem;
+    font-size: 1.2rem;
+    }
+}
+@media screen and (max-width:750px){
+    .hero1{
+        margin: 7rem auto;
+        justify-content: center;
+        box-shadow: none;
+        & .container4{
+            display: none;
+        }
+        & .formulaire{
+            gap: 2rem;
+           & form{
+               gap: 1rem;
+            }
+        }
+        & .btn1{
+        padding: 1rem;
+        width: 13rem;
+        font-size: 1.2rem;
+        }
+    }
+}
+@media screen and (max-width:345px){
+    .hero1{
+        margin: 7rem auto;
+        & .formulaire{
+            font-size: 0.8rem;
+            & h1{
+                font-size: 1.5rem;
+            }
+            gap: 1rem;
+        & .form1{
+            gap: 0.5rem;
+        }
+        & .form2{
+            gap: 0.5rem;
+        }
+        & form{
+        gap: 0.4rem;
+        }
+        & input{
+            width: 7rem;
+            height: 2.2rem;
+            font-size: 0.5rem;
+            padding: 0.5rem;
+            height: 1.5rem;
+        }
+        textarea{
+            width: 15rem;
+            height: 10rem;
+            font-size: 0.8rem;
+            }
+        }
+        & .btn1{
+            padding: 0.5rem;
+            width: 8rem;
+            font-size: 1rem;
+        }
+    }
 }

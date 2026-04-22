@@ -1,33 +1,22 @@
-.bar{
-    background-color: var(--text-primary);
-    width: 80%;
-    height: 0.1rem;
-    margin: 7rem 0 1rem 8.5rem;
+footer{
+    background-color: var(--color-nav);
+    box-shadow: 0px  -20px 20px #0000000f;
 }
 .container1{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 7rem;
-    margin-bottom: 2rem;
+        padding: 3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 6rem;
+        color: var(--secondary-color);
+    & p{
+        margin-left: 1rem;
+    }
     & .tel{
         & p {
             margin: 1rem;
         }
-        & span{
-            font-weight: bold;
-        }
-    }
-    & .eamil{
-        & p {
-            margin: 1rem;
-        }
-        & span{
-            font-weight: bold;
-        }
-    }
-    & .suivre{
-        text-align: center;
         & span{
             font-weight: bold;
         }
@@ -47,8 +36,6 @@
                 }
             }
             & .link{
-                transform: scale(1) rotate(0deg);
-                transition: all 1000ms;
                 &:hover {
                 transform: scale(1.7) rotate(45deg);
                 & path{
@@ -57,8 +44,6 @@
                 }
             }
             & .github{
-                transform: scale(1) rotate(0deg);
-                transition: all 1000ms;
                 &:hover {
                 transform: scale(1.7) rotate(45deg);
                 & path{
@@ -67,8 +52,7 @@
                 }
             }
             & .instagram{
-                transform: scale(1) rotate(0deg);
-                transition: all 1000ms;
+                margin-left: 1rem;
                 &:hover {
                     transform: scale(1.7) rotate(45deg);
                     & path{
@@ -82,14 +66,27 @@
             width: 1.5rem;
             height: 1.5rem;
             animation-delay: 300ms;
+            & path{
+            fill: var(--secondary-color);
         }
-    }
-    & .copyright{
-        display: flex;
-        gap: 0.5rem;
-        & svg{
-            width: 1.2rem;
-            height: 1.2rem;
         }
     }
 }
+/* ################# */
+/* Footer responsive */
+/* ################# */
+@media screen and (max-width:800px){
+    .container1{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 4rem 4rem;
+    } 
+}
+@media screen and (max-width:575px){
+    .container1{
+        display: grid;
+        grid-template-columns: 1fr ;
+        grid-template-rows: 4rem;
+    } 
+}
+

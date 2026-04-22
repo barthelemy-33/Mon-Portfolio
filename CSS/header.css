@@ -1,3 +1,4 @@
+
 .navbar{
     background-color: var(--secondary-color);
     color: var(--color-nav);
@@ -7,6 +8,16 @@
     align-items: center;
     padding: 0.8rem 6rem;
     box-shadow: 0 8px 18px rgba(0, 0, 0, 0.4);
+    width: 100%;
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    & svg{
+        display: block;
+        display: none;
+        width: 2.3rem;
+        height: 2.3rem;
+    }
     & p{
         font-weight: bold;
         font-family: var(--text-logo);
@@ -30,5 +41,57 @@
             }
         }
         
+    }
+}
+/* ################# */
+/* Responsive navbar */
+/* ################# */
+@media screen and (max-width:800px){
+    .navbar{
+        padding: 0.5rem 1rem;
+        & a{
+        display: none;
+    }
+    }
+    .navigateur{
+        & svg{
+            display: block;
+        }
+    }
+}
+@media screen and (max-width:400px){
+   .navbar{
+        padding: 0.6rem 2rem;
+        & a{
+        display: none;
+        }
+        & p{
+            font-size: 0.6rem;
+        }
+    }
+    .navigateur{
+        & svg{
+            display: block;
+            width: 1.4rem;
+            height: 1.4rem;
+        }
+    }
+}
+@media screen and (max-width:310px){
+   .navbar{
+        padding: 0.6rem 1rem;
+        & a{
+        display: none;
+        }
+        & p{
+            font-size: 0.4rem;
+        }
+    }
+    .navigateur{
+        & svg{
+            display: block;
+            width: 1.4rem;
+            height: 1.4rem;
+        }
     }
 }
