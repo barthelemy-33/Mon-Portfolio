@@ -75,6 +75,30 @@
         animation-delay: 1000ms;
     }
 }
+.cta{
+    position: fixed;
+    top: 85%;
+    right: 80%;
+    border-radius: 2rem;
+    background-color: var(--secondary-color);
+    padding: 0.4rem 1.5rem;
+    animation: cta 2s alternate backwards ease-in-out infinite;
+    transform: translateY(-20%);
+    transition: all 500ms;
+    &:hover{
+        animation-play-state: paused;
+        background-color: rgb(77, 228, 228);
+    }
+   & a{
+     & svg{
+        width: 2.2rem;
+        height: 2rem;
+        & path{
+            fill: var(--color-nav);
+        }
+    }
+   }
+}
 /* ################# */
 /* header responsive */
 /* ################# */
@@ -185,6 +209,9 @@
             width: 3.7rem;
             height: 3.7rem;
         }
+    }
+    .cta{
+        right: 60%;
     }
 }
         
