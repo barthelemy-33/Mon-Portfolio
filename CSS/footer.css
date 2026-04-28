@@ -87,6 +87,16 @@ footer{
         display: grid;
         grid-template-columns: 1fr ;
         grid-template-rows: 4rem;
-    } 
+        gap: 1.2rem;
+        font-size: 0.8rem;
+        padding: 2rem;
+        & ul{
+            & a{
+               & svg{
+                margin-top: 0.5rem;
+               }
+            }
+        }
+    }
 }
 
